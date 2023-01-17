@@ -10,7 +10,16 @@
 	<!-- the entire body must be written by student -->
 	<input type="text" id="evaluatedText"></input>
 	<h3 id="letterCount">0</h3>
-    <script src="./index.js"></script>
+    <script>
+		
+    let evaluatedText = document.getElementById("evaluatedText") // initially string is empty so count is also empty
+    let letterCount = document.getElementById("letterCount")
+
+     evaluatedText.addEventListener("input",()=>{
+	let count = evaluatedText.value.length;
+	letterCount.innerHTML = count;
+    })
+	</script>
 </body>
 
 </html>
